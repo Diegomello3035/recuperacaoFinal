@@ -6,11 +6,13 @@ import org.springframework.web.bind.annotation.*;
 import recuperacaoFinal.dm.Entity.Cliente;
 import recuperacaoFinal.dm.Repositoy.RepositoryCliente;
 
+
+import javax.swing.text.html.Option;
 import java.util.Optional;
 
 
 @RestController
-@RequestMapping(value = "/pedido/v1/")
+@RequestMapping(value = "/order/v1/")
 public class Controller {
     @Autowired
     private RepositoryCliente repository;
