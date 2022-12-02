@@ -1,8 +1,13 @@
 package recuperacaoFinal.dm.Entity;
 
 
+
 import jakarta.persistence.*;
+
 import recuperacaoFinal.dm.Itens.Itens;
+import org.hibernate.annotations.Cascade;
+import org.springframework.data.repository.cdi.Eager;
+
 
 import java.util.List;
 
