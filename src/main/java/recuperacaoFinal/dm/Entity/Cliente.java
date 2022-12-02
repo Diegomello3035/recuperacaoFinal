@@ -21,13 +21,14 @@ public class Cliente {
     private Integer numero;
     private String formaDePagamento;
     private Integer parcelas;
+    private Double valortotal;
     @OneToMany(cascade = CascadeType.ALL)
     List<Itens> itens;
 
     public Cliente() {
     }
 
-    public Cliente(Long id, String endereco, String cep, Integer numero, String formaDePagamento, Integer parcelas, List<Itens> itens) {
+    public Cliente(Long id, String endereco, String cep, Integer numero, String formaDePagamento, Integer parcelas,Double valortotal, List<Itens> itens) {
         this.id = id;
         this.endereco = endereco;
         this.cep = cep;
@@ -35,6 +36,8 @@ public class Cliente {
         this.formaDePagamento = formaDePagamento;
         this.parcelas = parcelas;
         this.itens = itens;
+        this.valortotal = valortotal;
+
     }
 
     public Long getId() {
@@ -89,6 +92,14 @@ public class Cliente {
 
     public void setItens(List<Itens> itens) {
         this.itens = itens;
+    }
+
+    public Double getValortotal() {
+        return valortotal;
+    }
+
+    public void setValortotal(Double valortotal) {
+        this.valortotal = valortotal;
     }
 }
 

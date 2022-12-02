@@ -1,4 +1,4 @@
-package recuperacaoFinal.dm.ControllerApi;
+package recuperacaoFinal.dm.OrderApi;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,13 +7,12 @@ import recuperacaoFinal.dm.Entity.Cliente;
 import recuperacaoFinal.dm.Repositoy.RepositoryCliente;
 
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
 
 
 @RestController
 @RequestMapping(value = "/order/v1/")
-public class Controller {
+public class Order {
     @Autowired
     private RepositoryCliente repository;
 
